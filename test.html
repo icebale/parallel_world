@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.bxo{
+				position: absolute;
+				top: 0;left: 0;width: 200px;height: 200px;
+				background: #f00;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="320" height="1000" style="border: 1px dashed cadetblue;position: relative;">
+		</canvas>
+		<script type="text/javascript">
+		var canvas = document.getElementById("canvas"),
+		ctx = canvas.getContext('2d');
+		
+		ctx.strokeStyle = '#777777';
+		ctx.fillStyle = '#FFFF00'
+		ctx.lineCap = 'round';
+		ctx.lineWidth=6;
+		
+		ctx.beginPath();
+		ctx.moveTo(0,60);
+		ctx.quadraticCurveTo(74,68,120,40)
+		
+		ctx.lineTo(120,40);
+		ctx.quadraticCurveTo(160,0,200,40);
+		
+		ctx.lineTo(200,40);
+		ctx.quadraticCurveTo(260,80,320,60)
+		
+		ctx.lineTo(320,60);
+		ctx.lineTo(320,760);
+		ctx.lineTo(0,760);
+		ctx.lineTo(0,60)
+		ctx.stroke();
+		ctx.closePath();
+		ctx.fill()
+		</script>
+	</body>
+
+</html>

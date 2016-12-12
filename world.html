@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>平行世界</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript">
+			document.querySelector('html').style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body onload="loaded()">
+		<!--主页-->
+		<div class="container1" >
+			<header class="header1" >
+				<ul class="display-box">
+					<li class="box-flex-1 one"><i class="iconfont icon-xinxi"></i></li>
+					<li class="two">
+						<div class="circle"><i class="iconfont icon-shuidi"></i></div>
+					</li>
+					<li class="box-flex-1 three"><i class="iconfont icon-jia"></i></li>
+				</ul>
+			</header>
+			<header class="header2" style="display: none;">
+				<ul class="display-box">
+					<li class="box-flex-1 one"><i class="iconfont icon-fanhui"></i></li>
+					<li class="box-flex-1 two">
+						消息
+					</li>
+					<li class="box-flex-1 three"><i class="iconfont icon-artboard31"></i></li>
+				</ul>
+			</header>
+			<header class="header3" style="display: none;">
+				<ul class="display-box">
+					<li class="box-flex-1 one"><i class="iconfont icon-fanhui"></i></li>
+					<li class="box-flex-1 three"><i class="iconfont icon-bianji"></i></li>
+				</ul>
+			</header>
+			<div class="tips">
+				恭喜你的能量石+ <i class="tip-random">5</i> !
+			</div>
+			<section id="section" >
+				<div id="wrap">
+					<ul id="scroller">
+						<li class="one">
+							<div class="empty"></div>
+							<div class="words">
+								<div class="one" id="explore-world">
+									<img src="img/global.png" />
+								</div>
+								<div class="two">
+									<h3>自大</h3>
+									<pre>人生的残酷是任何没有经历</pre>
+									<pre>过的人无法想象的</pre>
+									<pre>而你想要撅弃的...</pre>
+								</div>
+								<div class="three clearfix">
+									<img src="img/tianzhenzhe.png" />
+									<p>岩</p>
+								</div>
+							</div>
+						</li>
+						<li class="slide two">
+							<img class="slide_pic" src="img/dandan.png" />
+							<i class="iconfont icon-i"></i>
+						</li>
+						<li class="slide three">
+							<img class="slide_pic" src="img/xiaochenggong.png" />
+							<i class="iconfont icon-i"></i>
+						</li>
+						<li class="slide four">
+							<img class="slide_pic" src="img/fu.png" />
+						</li>
+						<li class="slide five">
+							<img class="slide_pic" src="img/yuanfang.png" />
+							<i class="iconfont icon-i"></i>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="canvas1" >
+				<canvas id="canvas" width="320" height="1000" style="background: rgba(99,99,99,0);">
+					您的浏览器是古董了,换一个吧换一个吧	
+				</canvas>
+				<div class="global">
+					<i class="iconfont icon-biji"></i>
+				</div>
+				<div id="wrapper">
+					<div id="wrap1">
+						<ul id="scroller1">
+							<li class="one">
+								<img src="img/user.jpg" />
+								<p>天蝎女,嫑惹我</p>
+							</li>
+							<li class="slide two">
+								<img src="img/mengjing1.png" />
+								<p>梦境启示录(1)</p>
+							</li>
+							<li class="slide three">
+								<img src="img/linggan1.png" />
+								<p>灵感簿(1)</p>
+							</li>
+							<li class="slide four">
+								<img src="img/bingxiang1.png" />
+								<p>一个盛放压力的冰箱(1)</p>
+							</li>
+							<li class="slide five">
+								<div class="shadow">
+									<div class="iconfont icon-jia1"></div>
+									<p>创建卡包或影子小组</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="xiaoxi" style="display: none;">
+				<ul>
+					<li class="display-box">
+						<div class="iconfont icon-shuidi2"></div>
+						<dl class="box-flex-1">
+							<dt>系统</dt>
+							<dd class="ellipsis">影子小组『活在影子里的每天的我』飘入了你的世界,点击查看</dd>
+						</dl>
+						<div>
+							<time>3小时前</time>
+							<i></i>
+						</div>
+					</li>
+					<li class="display-box">
+						<img src="img/users (3).jpg"/>
+						<dl class="box-flex-1">
+							<dt>安小妮</dt>
+							<dd class="ellipsis">送给迷茫的未来一颗能量石</dd>
+						</dl>
+						<div>
+							<time>5小时前</time>
+							<i></i>
+						</div>
+					</li>
+					<li class="display-box">
+						<img src="img/users (8).jpg"/>
+						<dl class="box-flex-1">
+							<dt>活在影子里的每天的我</dt>
+							<dd class="ellipsis">怎么加入影子卡包啊?</dd>
+						</dl>
+						<div>
+							<time>10小时前</time>
+							<i></i>
+						</div>
+					</li>
+					<li class="display-box four">
+						<div class="iconfont icon-dantou"></div>
+						<dl class="box-flex-1">
+							<dt>蛋不利多</dt>
+							<dd class="ellipsis">你好,我是平行世界的引路蛋,大名蛋不利多,是魔法师,最近在研习人类学~</dd>
+						</dl>
+						<div>
+							<time>20小时前</time>
+							<i></i>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="geren" style="display: none;">
+				<div class="first">
+					<img src="img/user.jpg"/>
+					<p>Icebela</p>
+					<pre>天蝎女,嫑惹我</pre>
+				</div>
+				<ul class="second">
+					<li class="clearfix">
+						<img class="fl" src="img/tianzhenzhe.png"/>
+						<p class="fl two">天蝎女,嫑惹我</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+					<li class="clearfix">
+						<i class="one iconfont icon-shuidi1"></i>
+						<p class="fl two">43颗能量石</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+					<li class="clearfix">
+						<i class="one iconfont icon-dingyueyonghu"></i>
+						<p class="fl two">订阅用户</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+					<li class="clearfix">
+						<i class="one iconfont icon-tansuo"></i>
+						<p class="fl two">探索偏好</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+					<li class="clearfix">
+						<i class="one iconfont icon-shiyongzhinanfill"></i>
+						<p class="fl two">使用指南</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+					<li class="clearfix">
+						<i class="one iconfont icon-xitongshezhi"></i>
+						<p class="fl two">系统设置</p>
+						<i class="iconfont icon-you three"></i>
+					</li>
+				</ul>
+				
+				<ul class="second">
+					<li class="clearfix">
+						<i class="one iconfont icon-tuichudenglu"></i>
+						<p class="fl two">登出</p>
+					</li>
+				</ul>
+			</div>
+			<div class="tianjia" style="display: none;">
+				<div class="wrap display-box">
+					<div class="one">
+						<a href="javascript:;" class="iconfont icon-tianjiatupian">
+							<input type="file" name="" id="" value=""/>
+						</a>
+					</div>
+					<div class="two box-flex-1">
+						<a href="javascript:;" class="first">
+							<input type="text" name="" id="" value="" placeholder="添加标题"/>
+						</a>
+						<a href="javascript:;" class="second">
+							<textarea name="" rows="" cols="" placeholder="添加正文"></textarea>
+						</a>
+					</div>
+				</div>
+				<footer class="footer3 display-box">
+					<div class="box-flex-1">
+						返回
+					</div>
+					<div class="box-flex-1">
+						发布
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--探索世界详情页-->
+		<div class="container2" style="display: none;">
+			<header>探索世界</header>
+			<section class="swiper-container little-cards" <!--style="display: none;"-->>
+				<ul class="swiper-wrapper clearfix">
+					<li class="swiper-slide">
+						<img class="bgpic" src="img/users (9).jpg" />
+						<h3 class="title1">自大</h3>
+						<p class="bgwords">人生的残酷是...</p>
+						<div class="user clearfix">
+							<img src="img/tianzhenzhe.png" />
+							<p>岩</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<img class="bgpic" src="img/bg (2).jpeg" />
+						<h3 class="title1">❤</h3>
+						<p class="bgwords">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【多学一样本事就能少说一句求人的话】 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要告诉你的是&nbsp;&nbsp;我在努力</p>
+						<div class="user clearfix">
+							<img src="img/tianzhenzhe.png" />
+							<p>Dasiy</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<img class="bgpic" src="img/bg (5).jpeg" />
+						<h3 class="title1">♫原来只是看起来匆忙</h3>
+						<p class="bgwords">别把我的失眠时间拖延一个礼拜以上记忆力又下降 明明说好早起看太阳又生怕遗忘 所以随时随地竖起我翅膀</p>
+						<div class="user clearfix">
+							<img src="img/tianzhenzhe.png" />
+							<p>Ice</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<img class="bgpic" src="img/bg (2).jpeg" />
+						<h3 class="title1">❤</h3>
+						<p class="bgwords">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【多学一样本事就能少说一句求人的话】 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要告诉你的是&nbsp;&nbsp;我在努力</p>
+						<div class="user clearfix">
+							<img src="img/tianzhenzhe.png" />
+							<p>Dobby</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<img class="bgpic ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="img/users (2).jpg" />
+						<h3 class="title1">加油</h3>
+						<p class="bgwords">fighting!!!!</p>
+						<div class="user clearfix" >
+							<img src="img/tianzhenzhe.png" />
+							<p>Smile</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+					<li class="swiper-slide"></li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</section>
+			<!--<section class="swiper-container big-cards">
+				<ul class="swiper-wrapper clearfix">
+					<li class="swiper-slide">
+						<img class="bgpic" src="img/users (9).jpg" />
+						<h3 class="title1">自大</h3>
+						<p class="bgwords">人生的残酷是...</p>
+						<div class="user clearfix">
+							<img src="img/tianzhenzhe.png" />
+							<p>岩</p>
+							<i class="iconfont icon-gengduo "></i>
+						</div>
+					</li>
+				</ul>
+			</section>-->
+			<footer class="footer1" style="display: none;">
+				<i class="iconfont icon-fanhui"></i>
+				<div class="world">
+					<i class="iconfont icon-tansuo"></i></div>
+			</footer>
+			<footer class="footer2">
+				<ul class="display-box firstline">
+					<li class="box-flex-1">
+						<i class="iconfont icon-xia"></i>
+						<p>收起</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-shoucang"></i>
+						<p>收藏</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-xingzhuang37-copy-copy"></i>
+						<p>赠送能量石</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-share01"></i>
+						<p>分享</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-gengduo"></i>
+						<p>更多</p>
+					</li>
+				</ul>
+				<ul class="display-box secondline">
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1 four">
+						<i class="iconfont icon-jubao"></i>
+						<p>举报</p>
+					</li>
+					<li class="box-flex-1 five">
+						<i class="iconfont icon-delete"></i>
+						<p>删除</p>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		
+		<!--抽取祝福签-->
+		<div class="container3" style="display: none;">
+			<div class="fupic">
+				<img src="img/xijie.png"/>
+			</div>
+			<footer class="footer2">
+				<ul class="display-box firstline">
+					<li class="box-flex-1">
+						<i class="iconfont icon-fanhui"></i>
+						<p>返回</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-shoucang"></i>
+						<p>收藏</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-xingzhuang37-copy-copy"></i>
+						<p>赠送能量石</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-share01"></i>
+						<p>分享</p>
+					</li>
+					<li class="box-flex-1">
+						<i class="iconfont icon-gengduo"></i>
+						<p>更多</p>
+					</li>
+				</ul>
+				<ul class="display-box secondline">
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1">
+					</li>
+					<li class="box-flex-1 four">
+						<i class="iconfont icon-jubao"></i>
+						<p>举报</p>
+					</li>
+					<li class="box-flex-1 five">
+						<i class="iconfont icon-delete"></i>
+						<p>删除</p>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/world.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
